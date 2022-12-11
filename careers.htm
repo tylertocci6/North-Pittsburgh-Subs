@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: North Pittsburgh Subs
+Use: Menu of the sub shop
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Dec 8, 2022
+Tested: Dec 8, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<!--Head containing title and meta names-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>North Pittsburgh Subs</title>
+        <meta name="description" content="The career page for the sub shop">
+        <meta name="keywords" content="sub, sandwich, hoagie, food, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+         <!--Code for SlickNav plugin-->
+         <link rel="stylesheet" href="mobile_menu/slicknav.css">
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+         <script src="mobile_menu/jquery.slicknav.min.js"></script>
+         <script type="text/javascript">
+             $(document) .ready (function() {
+                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+             });
+         </script>
+
+        <!--Code for Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="sub2_favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="sub2_favicon/favicon-16x16.png">
+
+</head>
+
+<!--Body countaining video and info-->
+<body>
+
+    <header>
+        <h1>North Pittsburgh Subs&trade;</h1>
+    </header>
+
+
+    <!--The navigation menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="menu.htm">Menu</a></li>
+        <li><a href="locations.htm">Locations</a></li>
+        <li><a href="careers.htm" class="current">Careers</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+<h2 id="h2_careers"> Career Opportunities </h2>
+<video id="videoplayer" width="700" height="500" controls autoplay>
+    <source src="final_images/final_video.mp4">
+</video>
+
+
+
+    <h2 id="h2_careers2"> Available Positions:</h2>
+
+    <ul>
+        <li>Part-time Employee: This is available for anyone that wants to work less than 30 hours a week and has no previous experience. </li>
+        <li>Shift Leaders: Previous experience is preferred. You will be in charge of opening and closing the store.  </li>
+        <li>Assistant Managers: This position requires that you work full-time and have previous experience. You will be keeping track of inventory and training new employees.</li>
+        <li>Managers: This position requires that you work full-time and have previous experience. You will be creating the employee schedule and placing produce orders. </li>
+        <li>Regional Managers: Previous managing experience is required. This position invloves visting all store locations and ensuring they are running properly. </li>
+    </ul>
+
+
+    <h2 id="h2_careers2"> How to Join:</h2>
+        <p id="p_careers">
+            Interviews can be scheduled in person at any store or you can setup an interview by submitting your information<a href="contact.htm">here.</a>
+        </p> 
+
+
+
+
+
+    
+
+<!--The footer with the address and phone number listed.-->
+    <footer>
+        <P>Office Address: 150 Pine Lane Pittsburgh, Pennsylvania </P>
+
+        <P>Phone: 724-123-4567 </P>
+    </footer>
+
+</body>
+</html>
+

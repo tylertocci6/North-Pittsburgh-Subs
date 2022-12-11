@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: North Pittsburgh Subs
+Use: Used to show location table
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Dec 8, 2022
+Tested: Dec 8, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>North Pittsburgh Subs</title>
+        <meta name="description" content="The website for North Pittsburgh Subs
+        that contains basic information about the business">
+        <meta name="keywords" content="sub, sandwich, hoagie, food, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+        <!--Code for SlickNav plugin-->
+        <link rel="stylesheet" href="mobile_menu/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="mobile_menu/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready (function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+
+        <!--Code for Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="sub2_favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="sub2_favicon/favicon-16x16.png">
+
+</head>
+
+
+<body>
+    <header>
+        <h1>North Pittsburgh Subs&trade;</h1>
+    </header>
+
+    <!--The navigation menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="menu.htm">Menu</a></li>
+            <li><a href="locations.htm" class="current">Locations</a></li>
+            <li><a href="careers.htm">Careers</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    
+    <!--The table listing the locations-->
+
+    <table>
+    <caption>Our Locations</caption>    
+    <thead>
+        <tr>
+            <th>Location</th> 
+            <th>Address</th>
+            <th>Phone Number</th> 
+            <th>Hours</th>
+        </tr>
+        <tr>
+            <th id ="cat_1" colspan="4">Current Locations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cranberry</td>
+            <td>20300 Route 19</td>
+            <td>724-111-1111</td>
+            <td>Open 7 Days: 10am - 9pm</td>
+        </tr>
+        <tr>
+            <td>McKinght</td>
+            <td>4848 Route 8</td>
+            <td>724-222-2222</td>
+            <td>Open 7 Days: 10am - 9pm</td>
+        </tr>
+        <tr>
+            <td>Bridgeville</td>
+            <td>11978 Perry Highway</td>
+            <td>724-333-3333</td>
+            <td>Open 7 Days: 10am - 8pm</td>
+        </tr>
+        <tr>
+            <td>Wexford</td>
+            <td>340 New Castle Rd</td>
+            <td>724-444-4444</td>
+            <td>Open 7 Days: 10am - 9pm</td> 
+        </tr>
+        <tr>
+            <td>Allison Park</td>
+            <td>6508 Steubenville Pike</td>
+            <td>724-555-5555</td>
+            <td>Open 7 Days: 10am - 8pm</td>
+        </tr>
+        <tr>
+            <td>Moon Township</td>
+            <td>9898 University Boulevard</td>
+            <td>724-666-6666</td>
+            <td>Open 7 Days: 10am - 8pm</td>
+        </tr>
+       
+        <tr>
+            <td id="cat_2" colspan="4">Future Locations</td>
+        </tr>
+
+        <tr>
+            <td>Monaca</td>
+            <td>171 Freeport Road</td>
+            <td>724-777-7777</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>Robinson</td>
+            <td>1155 Washington Pike</td>
+            <td>724-888-8888</td>
+            <td>TBD</td>
+        </tr>
+      
+    </tbody>
+    </table>
+
+    <footer>
+        <P>Office Address: 150 Pine Lane Pittsburgh, Pennsylvania </P>
+
+        <P>Phone: 724-123-4567 </P>
+    </footer>
+    
+</body>
+</html>

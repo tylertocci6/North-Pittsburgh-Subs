@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: North Pittsburgh Subs
+Use: Home page of the sub shop
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Dec 8, 2022
+Tested: Dec 8, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<!--Head containing the title of the website.-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>North Pittsburgh Subs</title>
+        <meta name="description" content="The website for North Pittsburgh Subs
+        that contains basic information about the business">
+        <meta name="keywords" content="sub, sandwich, hoagie, food, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+        <!--Code for SlickNav plugin-->
+        <link rel="stylesheet" href="mobile_menu/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="mobile_menu/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready (function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        
+        <!--Code for Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="sub2_favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="sub2_favicon/favicon-16x16.png">
+
+    
+</head>
+
+<!--Body containing the shop's name, a picture, description, list,
+address, phone, city, and state.-->
+
+<body>
+
+    <header>
+        <h1>North Pittsburgh Subs&trade;</h1>
+    </header>
+
+<!--The navigation menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm" class="current">Home</a></li>
+        <li><a href="menu.htm">Menu</a></li>
+        <li><a href="locations.htm">Locations</a></li>
+        <li><a href="careers.htm">Careers</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+<main id="index_main">
+    <h3>Our Story</h3>
+    <p class="first">North Pittsburgh Subs was founded in 2022 by Tyler Tocci with a goal to make the best subs in Pennsylvania. Everything about our business is high quality. Our MSA Grade top round beef are trimmed and cooked right in the store. Our meats and cheeses are all top-quality premium brands. Our bread is fresh-baked each day on the premises and our subs are prepared right in front of you.
+    </p>
+    
+</main>
+
+
+<!--The image and news-->
+<aside>
+    <figure>
+        <img src="final_images/sub_pic.jpg" alt="Sub Tray" id="sub_img">
+      
+    </figure>
+</aside>
+
+
+
+    <h2 id="h2_main"> Latest News</h2>
+
+    <ul id="ul_main">
+        <li>Customer appreciation will be held on 12/20/2022.</li>
+        <li>25% of sales will be denoted on 1/25/2023 for our month of giving charity event. </li>
+        <li>The Robinson location is set to open on 2/14/2023. All sales will be denoted to local charties for the first day. Family and friends day will be held the day before store opens.</li>
+        <li>Reward points will be expiring on 3/19/2023.</li>
+    </ul>
+
+   
+
+    <footer>
+        <P>Office Address: 150 Pine Lane Pittsburgh, Pennsylvania </P>
+
+        <P>Phone: 724-123-4567 </P>
+
+    </footer>
+
+
+</body>
+</html>

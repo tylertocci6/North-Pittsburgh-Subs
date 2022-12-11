@@ -1,0 +1,426 @@
+/*
+*****************************************************************************
+Title: CSS Format for Sub Shop
+Use: To format the final project
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Dec 8, 2022
+Tested: Dec 8, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+*/
+
+@font-face{
+    font-family: kom;
+    src: url("Fonts/KOMIKAB_.ttf");
+  }
+
+body{font-family: kom;
+}
+
+/*Was a 10 pixel margin on the entire page */
+* {margin: 1.3793%;
+font-size:110%;}
+
+/*Was a 10 pixel padding to all headings */
+h1, h2 {padding: 1.3793%;}
+
+/*Was a 5 pixel left and right padding to paragraph tags */
+p {padding-right: 0.6897%;
+    padding-left: 0.6897%;}
+
+/*Setting the body width was originally 725 pixels */
+body {width: 90%;
+font-size: 100%;}
+
+
+
+
+#sub_img{
+    float: right;
+    margin-right: 6em;
+    width: 50%;
+    border-color: black;
+    border-radius: 5em;
+    border-style: double;
+    }
+
+
+#ul_main{
+    padding-left: 6em;   
+}
+
+
+footer{
+    margin-top: 2%;
+}
+
+
+
+/*Adding a light background to the entire page */
+body{background: rgb(196, 196, 196)}
+
+h1 {font-size: 1.75em;}
+#h2_main {font-size: 1.5em;
+padding-top: 7em;
+padding-left: 9em;}
+footer p {font-size: .75em}
+
+
+
+body{  width: 99%;
+    
+    margin: 1.5593% auto;
+    border: 1px solid black; 
+    font-size: 100%;}
+    
+    h2{ 
+    font-size: 1.5em;}
+    
+    header{ border-bottom: 2px solid black;}
+    
+    #index_main{
+    float: left;
+    
+    }
+
+    aside{ 
+    float: right;
+    }
+   
+   
+    
+    footer{ clear: both;
+    border-top: 2px solid black;
+    font-size: .75em}
+
+    ul{ margin-left: 6.2370%;}
+
+
+
+
+
+
+
+/*********************************Used to format the menu page*********************************/
+
+#cold_sub_img{
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 5em;
+    float: left;
+}
+
+#cold_sub_img:hover {
+    opacity: 0.3;}
+
+
+#hot_sub_img{
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 5em;
+    float: right;
+}
+
+#hot_sub_img:hover {
+    opacity: 0.3;}
+
+#h2_menu{
+    font-size: 300%;
+    text-align: center;
+}
+
+
+
+
+/*********************************Used to format the cold and hot menu page*********************************/
+
+    #subMenu {
+      display: flex;
+      text-align: center;
+   
+    }
+   
+    #left {
+      flex-basis: 50%;
+    }
+  
+
+    #right {
+      flex-basis: 50%;
+    }
+  
+  
+.subImage {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.center_text{
+    text-align: center;
+}
+
+#h3_menu{
+    font-size: 150%;
+    border-top: 2px solid black;
+}
+
+
+
+/*********************************Used to format the navigation menu*********************************/
+    #nav_menu{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: .5%;
+        clear: both;
+    
+    }
+    
+    #nav_menu ul {
+        margin: auto;
+        font-size: 100%;
+        padding: 1%;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #e9e9e9;
+    }
+    
+    #nav_menu li {
+        display: inline;
+        margin: 2.5%;
+        padding: .5%;
+    }
+  
+    #nav_menu a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #nav_menu ul li a.current{
+        color: blue;
+        text-decoration:underline;
+        font-weight: bold;}
+    
+
+
+
+
+/***********************Used to format the locations table *********************************/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: nowrap;
+    
+    }
+caption {
+    font-weight: bold;
+    font-size: 1.25em;}    
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right; 
+    background-color: rgba(78, 136, 221, 0.404);}
+th {text-align: left}
+thead {background-color: rgb(234, 252, 134);}
+
+p.tables {float: left;
+margin: 2em;}
+
+#cat_1, #cat_2 {text-align: center;
+    background-color: rgb(19, 180, 172);
+    font-weight: bold;}
+
+
+/************************Used to format the contact page**********************************/
+fieldset{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend{
+    color:rgba(0, 4, 255, 0.404);
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label, input, select{
+    font-size: 90%;
+}
+
+label{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+input, select{
+    
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+input:required, input[required]{
+    border: 3px solid red;
+}
+
+input:valid{
+    border:1px solid black;
+}
+
+input:invalid{
+    box-shadow: none;
+}
+
+br{
+    clear: both;
+}
+
+#buttons input{
+    width: 10em;
+}
+
+textarea{
+    height: 5em;
+    width: 25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#state{
+    width: 12.5em;
+}
+
+
+/* Response page */
+#submission{
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+/*********************************Used to format the careers page*********************************/
+
+#h2_careers, #h2_careers2{
+    text-align: center;
+}
+
+#videoplayer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#p_careers{
+    text-align: center;
+}
+
+
+
+/*******************************Used to adjust screen***************************************/
+
+/* Hides the mobile menu initially */
+#mobile_menu {
+    display: none;}
+  
+
+/* Shrinks the nav menu */
+@media only screen and (max-width: 1024px) {
+    #nav_menu ul li a{font-size: .875em;}
+}
+  
+  /* Tablet portrait to standard 960 */
+  @media only screen and (max-width: 959px) {
+    #nav_menu {margin-left: auto;
+        margin-right: auto;
+        width: 50%;}
+
+    #nav_menu ul li a {font-size: .75em;
+    width: 60%;}
+    h1 {font-size: 1.25em;}
+    h2 {font-size: 1em;}
+    footer p {font-size: .60em}
+
+    aside, #index_main, #sub_img{ float: none;}
+    body main{border-right: none;}
+
+    
+    #sub_img{display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;}
+
+    #h2_main, #ul_main{margin: 2%;
+        padding:2%;}
+
+    #h2_menu{font-size: 180%;}
+
+    #cold_sub_img, #hot_sub_img{
+        float: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;}
+        
+    #subMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;}
+
+    table{white-space: pre-wrap;}
+
+  }
+  
+  /* Mobile landscape to tablet portrait and displays mobile menu */
+  @media only screen and (max-width: 767px) {
+    #nav_menu{display: none;}
+    #mobile_menu{display: block;}
+    .slick_menu {background-color: #facd8a !important;}
+  
+    h1 {font-size: 1.25em;}
+    h2 {font-size: 1em;}
+    footer p {font-size: .60em}
+
+    aside, #index_main, #sub_img{ float: none;}
+    body main{border-right: none;}
+
+
+   
+    table {width: 60%;}
+    th, td{display: block;}
+    thead, #cat_2{display: none;}
+    tr td:first-child{font-weight: bold;
+    font-size: 120%;
+    background-color: silver}
+    
+
+    /* Contact Page */
+    fieldset{
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        font-size: 120%;}
+
+    #buttons{width: 8em; }
+
+    input, #state{width: 10em; }
+
+    #sub{
+        text-align: right;
+        font-size: 100%; }
+
+    #sub legend{text-align: left;}
+  }

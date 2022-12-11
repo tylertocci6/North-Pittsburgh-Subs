@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!--
+*****************************************************************************
+Title: North Pittsburgh Subs
+Use: Cold sub menu of the sub shop
+Author: Tyler Tocci
+School/Term: Southern Illinois University, Fall 2022
+Developed: Dec 8, 2022
+Tested: Dec 8, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+
+<!--Head containing title and meta names-->
+
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>North Pittsburgh Subs</title>
+        <meta name="description" content="The menu for the sub shop">
+        <meta name="keywords" content="sub, sandwich, hoagie, food, Pittsburgh, 
+        Pennsylvania">
+        <link rel= "stylesheet" href="First_Format.css">
+
+         <!--Code for SlickNav plugin-->
+         <link rel="stylesheet" href="mobile_menu/slicknav.css">
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+         <script src="mobile_menu/jquery.slicknav.min.js"></script>
+         <script type="text/javascript">
+             $(document) .ready (function() {
+                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+             });
+         </script>
+
+        <!--Code for Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="sub2_favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="sub2_favicon/favicon-16x16.png">
+
+</head>
+
+
+<!--Body countaining cold sub list-->
+<body>
+
+    <header>
+        <h1>North Pittsburgh Subs&trade;</h1>
+    </header>
+
+
+     <!--The navigation menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="menu.htm"class="current">Menu</a></li>
+        <li><a href="locations.htm">Locations</a></li>
+        <li><a href="careers.htm">Careers</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+
+<h2 class="center_text">Our Cold Subs:</h2>
+    <div id="subMenu">
+      <div id="left">
+        <p><strong>Ham Sub</strong></p>
+        <img class="subImage" alt="Ham Sub" src="final_images/ham_sub.png">
+        <p>
+          Ham, provolone, onions, lettuce, and tomato.
+        </p>
+        <br><br>
+        <p><strong>Turkey Sub</strong></p>
+        <img class="subImage" alt="Turkey Sub" src="final_images/turkey_sub.png">
+        <p>
+          Turkey, swiss, onions, lettuce, and tomato.
+        </p>
+      </div>
+
+
+      <div id="right">
+        <p><strong>Italian Sub</strong></p>
+        <img class="subImage" alt="Italian Sub" src="final_images/italian_sub.png">
+        <p>
+          Ham, cappacuolo, salami, pepperoni, provolone, onions, lettuce, and tomato. 
+        </p>
+        <br><br>
+        <p><strong>Veggie Sub</strong></p>
+        <img class="subImage" alt="Veggie Sub" src="final_images/veggie_sub.png">
+        <p>
+          Provolone, swiss, green bell peppers, onions, lettuce, and tomato.
+        </p>
+      </div>
+    </div>
+    
+
+    <h3 id="h3_menu" >Sub Sizes</h3>
+    <ul>
+      <li>Small: Four Inches</li>
+      <li>Medium: Seven Inches</li>
+      <li>Large: Fourteen Inches</li>
+    </ul>
+    
+
+
+
+
+
+<!--The footer with the address and phone number listed.-->
+    <footer>
+      <P>Office Address: 150 Pine Lane Pittsburgh, Pennsylvania </P>
+
+      <P>Phone: 724-123-4567 </P>
+    </footer>
+
+</body>
+</html>
